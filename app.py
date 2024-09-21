@@ -44,7 +44,7 @@ if 'index' not in st.session_state:
     st.session_state['index'] = None
 
 if process:
-    valid_urls = [url for url in urls if url]  # Filter out empty URLs
+    valid_urls = [url for url in urls if url]
 
     if not valid_urls:
         st.error("Please enter at least one valid URL.")
