@@ -5,11 +5,12 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 import faiss
 from groq import Groq
-from Secret_Keys import api_key
 import time
 import requests
 from bs4 import BeautifulSoup
+import os
 
+api_key = os.getenv("api_key")
 
 def fetch_url_data(url):
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
@@ -74,8 +75,10 @@ if process:
 
         placeholder.empty()
         
+    except IndexError as e:
+        placeholder.write("Cant process this URL (Access Denied!!)")
     except Exception as e:
-        placeholder.write("Please enter atleast one URL to process")
+        placeholder.write("Enter atleast one URL")
         
 
 if st.session_state['chunks']:
