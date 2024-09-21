@@ -1,7 +1,0 @@
-streamlit
-numpy
-langchain
-sentence-transformers
-faiss
-groq
-requests
