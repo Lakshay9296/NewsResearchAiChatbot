@@ -16,7 +16,7 @@ The **News Research AI Chatbot** allows users to input URLs containing news arti
 
 ## Demo
 
-You can try out the chatbot live on the demo website: [News Research AI Chatbot Demo](https://news-research-chat.streamlit.app/)
+You can try out the chatbot live on the website: [News Research AI Chatbot Demo](https://news-research-chat.streamlit.app/)
 
 ## Features
 
