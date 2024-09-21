@@ -1,6 +1,6 @@
 # News Research AI Chatbot
 
-An AI-powered chatbot designed to help users research and answer questions based on news articles from provided URLs. It processes articles using natural language processing (NLP) and provides relevant answers based on the content.
+An AI-powered chatbot designed to help users research and answer questions based on news articles from provided URLs. It processes articles using natural language processing (NLP) and provides relevant answers based on the content. This project is categorized as a **Generative AI** project, leveraging state-of-the-art models for natural language understanding.
 
 ## Table of Contents
 
